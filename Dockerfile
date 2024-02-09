@@ -50,7 +50,7 @@ RUN --security=insecure \
             --silent \
             --location \
             https://raw.githubusercontent.com/home-assistant/core/${HOME_ASSISTANT_VERSION:?}/homeassistant/package_constraints.txt | \
-            grep 'cryptography==')"
+            grep '^cryptography==')"
 
 FROM ${BASE_IMAGE_NAME}:${BASE_IMAGE_TAG}
 
